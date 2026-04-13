@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📱 WhatsApp Tracker</h1>
+            <p>Track your WhatsApp contacts</p>
+        </header>
+
+        <div class="form-section">
+            <h2>Add New Contact</h2>
+            <div class="input-group">
+                <input type="text" id="contactName" placeholder="Contact Name" required>
+                <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                <button onclick="addContact()">Add Contact</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="updateAllStatus()" class="btn-primary">🔄 Update Status</button>
+            <button onclick="clearAll()" class="btn-danger">🗑️ Clear All</button>
+        </div>
+
+        <div class="contacts-section">
+            <h2>Tracked Contacts</h2>
+            <div id="contactsList" class="contacts-list">
+                <p class="empty-message">No contacts added yet. Add one to get started!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
